@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  ai:
+    mcp:
+      server:
+        name: governed-enterprise-tools
+        version: 1.0.0
+        protocol: STREAMABLE
+        type: SYNC
+        instructions: "Enterprise tools. Authorization must be enforced outside model reasoning."
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
